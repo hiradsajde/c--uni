@@ -72,14 +72,29 @@ void time_to_calender(){
         cout << "input is out of range";
     }
 }
+void range_of_age_detector(){
+    float age ; 
+    cout << "How old are you? ";
+    cin >> age ; 
+    if (age < 0){
+        cout << "error , you should be born to use this program :)";
+    } else if (age < 18) {
+        cout << "you are child";
+    } else if (age < 65){
+        cout << "you are adult";
+    } else {
+        cout << "you are a cinior citizen";
+    }
+    
+}
 int main()
 {
     int choose;
     cout << "which program do you want to run?" << endl;
     cout << "1- Tax Calculator (Question 2)" << endl;
-    cout << "2- number of days to another planet calender (Question 4)" << endl;
-    cout << "3- type of triangle detector (Question 6)" << endl;
-
+    cout << "2- Number of days to another planet calender (Question 4)" << endl;
+    cout << "3- Type of triangle detector (Question 6)" << endl;
+    cout << "4- Range of age detector (Question 10)" << endl;
     cout << "enter your decition as a number (1-3) : ";
     cin >> choose;
     switch (choose) {
@@ -91,6 +106,9 @@ int main()
             break;
         case 3 : 
             triangle_detector();
+            break;
+        case 4 : 
+            range_of_age_detector();
             break;
         default : 
             cout << "out of range";
