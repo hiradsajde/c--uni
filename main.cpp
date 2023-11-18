@@ -95,7 +95,7 @@ int main()
     cout << "2- Number of days to another planet calender (Question 4)" << endl;
     cout << "3- Type of triangle detector (Question 6)" << endl;
     cout << "4- Range of age detector (Question 10)" << endl;
-    cout << "enter your decition as a number (1-3) : ";
+    cout << "enter your decition as a number (1-4) : ";
     cin >> choose;
     switch (choose) {
         case 1 :
